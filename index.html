@@ -131,21 +131,18 @@
 
   /* BEAR LORE SECTION */
   .lore-header {
-    padding: 80px 60px 60px;
+    padding: 80px 120px 70px;
     border-bottom: 1px solid var(--grey-dark);
-    position: relative;
-    overflow: hidden;
-  }
-
-  .lore-header-inner {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    gap: 40px;
+    gap: 60px;
   }
 
-  .lore-title-wrap {
-    position: relative;
+  .lore-left {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
   }
 
   .lore-eyebrow {
@@ -153,7 +150,6 @@
     letter-spacing: 6px;
     text-transform: uppercase;
     color: var(--grey-mid);
-    margin-bottom: 16px;
     display: flex;
     align-items: center;
     gap: 14px;
@@ -170,23 +166,30 @@
   .lore-title {
     font-family: 'Bebas Neue', sans-serif;
     font-size: clamp(72px, 10vw, 140px);
-    letter-spacing: 6px;
+    letter-spacing: 10px;
     line-height: 0.9;
     color: var(--white);
   }
 
   .lore-title span {
-    color: var(--grey-dark);
+    color: var(--grey-mid);
   }
 
   .lore-desc {
-    max-width: 280px;
-    font-size: 11px;
-    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 10px;
+    border-left: 1px solid var(--grey-dark);
+    padding-left: 30px;
+  }
+
+  .lore-desc span {
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
     color: var(--grey-mid);
-    line-height: 2;
-    text-align: right;
-    padding-bottom: 8px;
+    line-height: 1;
   }
 
   .gallery {
@@ -279,13 +282,12 @@
   .how { border-bottom: 1px solid var(--grey-dark); }
 
   .how-header {
-    padding: 80px 60px 0;
+    padding: 80px 120px 60px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     align-items: end;
     border-bottom: 1px solid var(--grey-dark);
-    padding-bottom: 60px;
   }
 
   .how-title {
@@ -313,7 +315,7 @@
   }
 
   .step {
-    padding: 50px 40px 60px;
+    padding: 50px 50px 60px;
     border-right: 1px solid var(--grey-dark);
     position: relative;
     transition: background 0.3s ease;
@@ -361,7 +363,7 @@
   }
 
   footer {
-    padding: 50px 60px;
+    padding: 80px 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -437,12 +439,13 @@
 
 
 <div class="lore-header">
-  <div class="lore-header-inner">
-    <div class="lore-title-wrap">
-      <div class="lore-eyebrow">Field Documents</div>
-      <div class="lore-title">BEAR<br><span>LORE</span></div>
-    </div>
-    <div class="lore-desc">Six documented sightings.<br>Each one unexplained.<br>All of them real.</div>
+  <div class="lore-left">
+    <div class="lore-title">BEAR <span>LORE</span></div>
+  </div>
+  <div class="lore-desc">
+    <span>Six documented sightings</span>
+    <span>Each one unexplained</span>
+    <span>All of them real</span>
   </div>
 </div>
 
